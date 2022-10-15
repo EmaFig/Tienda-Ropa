@@ -1,1 +1,59 @@
 /* CSS */
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Inspiration&family=Shadows+Into+Light&display=swap');
+
+/*FONTAWESOME*/
+@import "path/to/font-awesome/less/font-awesome.less";
+
+
+/* INDEX */
+.banner{
+    width:100%;
+    height: 500px;
+}
+
+.titulo{
+    margin-top: -30%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 200px;
+
+}
+
+.subtitulo{
+    font-family: 'Shadows Into Light', cursive;
+    margin-top: -10%;
+    text-align: center;
+}
+
+.ofertas{
+    font-family: 'Fruktur', cursive;
+    font-size: 44px;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.mostrador{
+    width: 500px;
+    height: 400px;
+    border: 3px solid black;
+    border-radius: 5%;
+    margin-left: 10%;
+}
+
+.row{
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 20px;
+}
+
+.column img{
+    margin-top: 50px;
+}
