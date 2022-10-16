@@ -5,30 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/template.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>CLOTHES</title>
+
+    <script>
+                        //IR ARRIBA
+
+                $(document).ready(function(){
+
+                $('.ir-arriba').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300);
+                });
+
+                $(window).scroll(function(){
+                    if( $(this).scrollTop() > 0 ){
+                        $('.ir-arriba').slideDown(300);
+                    } else {
+                        $('.ir-arriba').slideUp(300);
+                    }
+                });
+
+                });
+    </script>
 </head>
 <body>
-    
+    <span class="ir-arriba"><i class="fas fa-chevron-up"></i></span>
         <img class="banner" src="img/banner.jpg" width="100px">
         <center><h1 class="titulo">Clothes</h1></center>
         <h2 class="subtitulo">Bienvenidos a la tienda de ropa Clothes. Encuente en nuestra Galeria las variedades de ropa que sean de tu agrado.</h2>
+
+        <table class="tabla_botonera"><tr>
+            <td><a class="botonera" href="index.html">INICIO</a></td>
+            <td><a class="botonera" href="catalogo.html">CATALOGO</a></td>
+            <td><a class="botonera" href="contacto.html">CONTACTO</a></td>
+            <td><a class="botonera" href="quienes_somos.html">QUIENES SOMOS</a></td>
+        </tr></table>
 
         <h1 class="ofertas">Ofertas</h1>
 
         <div class="row">
             <div class="column">
-                <img class="mostrador" src="img/imagen-oferta1.jpg">
-                <img class="mostrador" src="img/imagen-oferta2.jpg">
-                <img class="mostrador" src="img/imagen-oferta3.jpg">
-                <img class="mostrador" src="img/imagen-oferta4.jpg">
+                <img class="mostrador" src="img/imagen-oferta1.jpg" onmouseover="mostrar_boton_1()", onmouseleave="ocultar_boton_1()">
+                <img class="mostrador" src="img/imagen-oferta2.jpg" onmouseover="mostrar_boton_2()", onmouseleave="ocultar_boton_2()">
+                <img class="mostrador" src="img/imagen-oferta3.jpg" onmouseover="mostrar_boton_3()", onmouseleave="ocultar_boton_3()">
+                <img class="mostrador" src="img/imagen-oferta4.jpg" onmouseover="mostrar_boton_4()", onmouseleave="ocultar_boton_4()">
             </div>
         </div>
 
-        <button>Añadir al Carrito <i class="fas fa-shopping-cart"></i></button>
-        <i class="fas fa-shopping-cart"></i>
-
+        <!--Botonera Carrito-->
+        
+        <button id="carrito_oferta_1" href="#" class="carrito">Añadir al Carrito <i class="fas fa-shopping-cart"></i></button>
+        <button id="carrito_oferta_2" class="carrito">Añadir al Carrito <i class="fas fa-shopping-cart"></i></button>
+        <button id="carrito_oferta_3" class="carrito">Añadir al Carrito <i class="fas fa-shopping-cart"></i></button>
+        <button id="carrito_oferta_4" class="carrito">Añadir al Carrito <i class="fas fa-shopping-cart"></i></button>
+        
     
-   
+   <div class="footer">2022 - Programa Codo a Codo - Python </div>
 </body>
 </html>
