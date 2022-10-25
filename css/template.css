@@ -12,10 +12,14 @@
 table tr td{
     padding: 80px;
 }
+a {
+    text-decoration: none;
+}
 /* INDEX */
 .banner{
     width:100%;
-    height: 500px;
+    height: 400px;
+    
 }
 
 .titulo{
@@ -89,9 +93,60 @@ table tr td{
 }
 
 
+/* TITULO ESTACIONES - TEMPLATE */
+
+.estaciones{
+    background-color: black;
+    /*opacity:60%;*/
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    font-style: Arial;
+    font-weight: bold;
+    font-size: 33px;
+    width: 10%;
+    height: 5%;
+    padding:6px 24px;
+
+
+}
+
+.estaciones:hover{
+    color: red;
+    background:none;
+    border: 8px solid black;
+}
+
+
+
+
 
 
 /* BOTON CARRITO ID */
+
+#posicion_1{
+    position:absolute;
+    margin-top: -38%;
+    margin-left: 23%;
+}
+
+#posicion_2{
+    position:absolute;
+    margin-top: -38%;
+    margin-left: 68%;
+}
+
+#posicion_3{
+    position:absolute;
+    margin-top: -9%;
+    margin-left: 23%;
+}
+
+#posicion_4{
+    position:absolute;
+    margin-top: -9%;
+    margin-left: 68%;
+}
 
 #carrito_oferta_1{
     position:absolute;
@@ -117,8 +172,27 @@ table tr td{
     margin-left: 68%;
 }
 
-.mostrador:hover #carrito_oferta_1{
+.mostrador:hover #posicion_1{
     visibility: visible;
+}
+
+
+/*APP*/
+
+.app {
+    margin-left: 15%;
+    margin-top: -3%;
+}
+
+.app p{
+    font-size: 22px;
+    font-style: Arial;
+    font-weight: bold; 
+}
+
+.app ul{
+    font-family: Arial;
+    font-size: 15px;
 }
 
 
@@ -185,3 +259,36 @@ table tr td{
     text-align: center;
     font-family: 'Acme', sans-serif;
 }
+
+
+
+
+
+  @media screen and (max-width: 360px ) {
+    body{
+        background-color: red; 
+    }
+
+    .banner img{
+
+        width: 60%;
+    }
+
+
+}
+  @media screen and (max-width: 700px ) {
+    body{
+        background-color: #d0451b;
+    }
+
+    .banner img{
+        width:100%;
+    }
+
+    .titulo{
+        margin-top: -500px;
+    }
+    
+}
+
+
