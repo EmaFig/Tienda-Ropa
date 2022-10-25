@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/template.css" rel="stylesheet" type="text/css">
+    <script src="../js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+   
+    
+    <title>CLOTHES</title>
+
+    <script>
+                        //IR ARRIBA
+
+                $(document).ready(function(){
+
+                $('.ir-arriba').click(function(){
+                    $('body, html').animate({
+                        scrollTop: '0px'
+                    }, 300);
+                });
+
+                $(window).scroll(function(){
+                    if( $(this).scrollTop() > 0 ){
+                        $('.ir-arriba').slideDown(300);
+                    } else {
+                        $('.ir-arriba').slideUp(300);
+                    }
+                });
+
+                });
+    </script>
+
+   
+</head>
+<body>
+    <span class="ir-arriba"><i class="fas fa-chevron-up"></i></span>
+        <img class="banner" src="../img/banner.jpg" width="100px">
+        <center><h1 class="titulo">Clothes</h1></center>
+        <h2 class="subtitulo">Bienvenidos a la tienda de ropa Clothes. Encuente en nuestra Galeria las variedades de ropa que sean de tu agrado.</h2>
+
+        <table class="tabla_botonera"><tr>
+            <td><a class="botonera" href="../index.html">INICIO</a></td>
+            <td><a class="botonera" href="catalogo.html">CATALOGO</a></td>
+            <td><a class="botonera" href="contacto.html">CONTACTO</a></td>
+            <td><a class="botonera" href="quienes_somos.html">QUIENES SOMOS</a></td>
+        </tr></table>
+
+        <h1 class="ofertas">Quienes Somos</h1>
+
+       <h2 class="QS"> Somo una empresa Nacional de Venta de Ropa por catalogo con mas de 10 años de Trayectoria, buscando siempre satisfacer al cliente en consumo y servicios. Esperamos que nuestros productos sean de su agrado.</h2>
+        <center><img class="ImagenQS" src="../img/QuienesSomos.jpg"></center>
+        <br>
+    
+   <div class="footer">2022 - Programa Codo a Codo - Python </div>
+
+    
+    
+</body>
+</html>
